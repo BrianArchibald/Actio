@@ -92,7 +92,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color: #7F7F7F;
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
@@ -104,13 +104,10 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #e44c65;
 		text-decoration: none;
 	}
 
 		a:hover {
-			/*color: #e44c65 !important;*/
 			color: #39c3ef !important;
 			border-bottom-color: transparent;
 		}
@@ -2192,6 +2189,13 @@ input, select, textarea {
 		margin: 4em 0 0 0;
 	}
 
+	.landing-text {
+		font-size: 18px;
+    	font-weight: 300;
+    	letter-spacing: .04em;
+    	line-height: 28px;
+	}
+
 /* Form */
 
 	form {
@@ -2227,7 +2231,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease-in-out;
 		background: transparent;
 		border-radius: 4px;
-		border: solid 1px rgba(255, 255, 255, 0.3);
+		border: solid 1px rgba(99, 98, 98, 0.3);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2359,22 +2363,22 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: #7F7F7F !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: #7F7F7F !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: #7F7F7F !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: #7F7F7F !important;
 		opacity: 1.0;
 	}
 
@@ -2439,7 +2443,7 @@ input, select, textarea {
 			}
 
 		.icon.major {
-			background: #272833;
+			background: #eceaea;
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
@@ -2448,6 +2452,7 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 			text-align: center;
 			width: 6em;
+			color: #F26C32;
 		}
 
 			.icon.major:before {
@@ -2872,7 +2877,7 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #298cad;
+				background-color: #1655ba;
 			}
 
 			input[type="submit"].primary:active,
@@ -2928,6 +2933,23 @@ input, select, textarea {
 			width: 2em;
 			z-index: 1;
 		}
+		.first-scroll:before {
+			background-image: url("images/arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 1.5em;
+			left: 50%;
+			margin: -0.75em 0 0 -1em;
+			position: absolute;
+			top: 50%;
+			width: 2em;
+			z-index: 1;
+			filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+		}
+		
 
 /* Spotlight */
 
@@ -3161,6 +3183,7 @@ input, select, textarea {
 
 /* Wrapper */
 
+
 	.wrapper {
 		padding: 6em 0 4em 0;
 	}
@@ -3178,7 +3201,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="email"]:focus,
 			.wrapper.style2 select:focus,
 			.wrapper.style2 textarea:focus {
-				border-color: rgba(255, 255, 255, 0.5);
+				border-color: #7F7F7F;
 			}
 
 			.wrapper.style2 input[type="submit"]:hover, .wrapper.style2 input[type="submit"]:active,
@@ -3279,6 +3302,19 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		#contact-submit {
+			background-color: #39c3ef;
+    		box-shadow: none;
+    		color: #ffffff !important;
+		}
+
+		#contact-submit:hover {
+			background-color: #1655ba !important;
+		}
+		#one {
+			background-color: #efeeee;
+		}
+
 /* Dropotron */
 
 	.dropotron {
@@ -3340,6 +3376,22 @@ input, select, textarea {
 
 	#page-wrapper {
 		padding-top: 3.5em;
+	}
+
+	.store-img {
+		margin-top: 1em;
+		height: 3em;
+		width: 7em;
+	}
+
+	.store-img:hover {
+		cursor: pointer;
+	}
+
+	.app-store {
+		height: 2.8em;
+		width: 6.3em;
+		margin-bottom: .1em;
 	}
 
 	#header {
@@ -3517,6 +3569,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
+
 		#footer .icons .icon.alt {
 			text-decoration: none;
 		}
@@ -3533,6 +3586,10 @@ input, select, textarea {
 			#footer .icons .icon.alt:before {
 				color: #272833 !important;
 				text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
+			}
+
+			.footer-icon:hover {
+				color: #1655ba;
 			}
 
 		#footer .copyright {
@@ -3560,6 +3617,10 @@ input, select, textarea {
 
 				#footer .copyright li a {
 					color: inherit;
+				}
+
+				#footer a {
+					text-decoration: none;
 				}
 
 /* XLarge */
