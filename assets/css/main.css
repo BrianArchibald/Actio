@@ -78,6 +78,7 @@ input, select, textarea {
 
 	html, body {
 		background: #1c1d26;
+		
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3395,7 +3396,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
+		background: rgba(243, 243, 243, 0.965) !important;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
