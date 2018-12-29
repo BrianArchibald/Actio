@@ -3408,6 +3408,7 @@ input, select, textarea {
 		height: 2.8em;
 		width: 6.3em;
 		margin-bottom: .1em;
+		margin-top: 1.07em;
 	}
 
 	#header {
@@ -3480,6 +3481,7 @@ input, select, textarea {
 
 	body.landing #page-wrapper {
 		padding-top: 0;
+		margin-top: -5px;
 	}
 
 	body.landing #header {
@@ -3553,14 +3555,18 @@ input, select, textarea {
 		.header-content {
 			display: flex;
 			flex-direction: column;
-			margin-left: -26% !important;
+			flex-wrap: wrap;
+			/*margin-left: -26% !important;*/
+			margin-left: -9vw;
+    		margin-right: 15vw;
 		}
 
 		.header-second-section {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			margin-right: -8%;
+			/*margin-right: -8%;*/
+			
 		}
 
 		#banner-logo img{
@@ -3571,6 +3577,7 @@ input, select, textarea {
 		.header-logos {
 			display: flex;
 			flex-direction: row;
+			justify-content: center;
 		}
 
 		#banner .content {
@@ -3636,6 +3643,31 @@ input, select, textarea {
 	#logo img {
 		height: 9em;
 	}
+
+	@media screen and (max-width: 1515px) {
+		.header-content {
+   		   /*margin-right: 6vw;*/
+		}
+
+		#banner .content #header-subsection {
+    		line-height: 1em;	
+	}
+
+	@media screen and (max-width: 1127px) {
+		.header-content {
+    		margin-right: 0vw;
+    		text-align: left;
+    	}
+	}
+
+	@media screen and (max-width: 1127px) {
+		#banner .content header h2 {
+    		font-size: 3.5em;
+    	}
+
+    	.header-content {
+   			margin-left: 0vw;
+		}
 
 /* Footer */
 
@@ -3969,6 +4001,20 @@ input, select, textarea {
 						width: 9em;
 					}
 
+					.header-full {
+					    flex-direction: column;
+					    margin-top: -17px;
+					}
+
+					#banner-logo img {
+					    margin-top: -2em;
+					    margin-bottom: 0em;
+					}
+
+					.header-logos {
+						margin-top: -9em;
+					}
+
 		/* Nav */
 
 			#page-wrapper {
@@ -4016,6 +4062,11 @@ input, select, textarea {
 					#titleBar .title a {
 						color: inherit;
 						border: 0;
+					}
+
+					#titleBar .title img {
+						height: 7em;
+						margin-top: -27px;
 					}
 
 				#titleBar .toggle {
@@ -4217,3 +4268,9 @@ input, select, textarea {
 					}
 
 	}
+
+	@media screen and (max-width: 370px) {
+		#banner-logo img {
+    		width: 17em;
+	}
+		}
