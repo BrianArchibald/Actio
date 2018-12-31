@@ -3650,7 +3650,8 @@ input, select, textarea {
 		}
 
 		#banner .content #header-subsection {
-    		line-height: 1em;	
+    		line-height: 1em;
+    	}	
 	}
 
 	@media screen and (max-width: 1127px) {
@@ -3668,7 +3669,7 @@ input, select, textarea {
     	.header-content {
    			margin-left: 0vw;
 		}
-
+	}
 /* Footer */
 
 	#footer {
