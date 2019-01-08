@@ -3412,7 +3412,6 @@ input, select, textarea {
 	}
 
 	#header {
-		/*background: rgba(255, 255, 255, 0.965) !important;*/
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
@@ -3423,7 +3422,6 @@ input, select, textarea {
 		width: 100%;
 		z-index: 100;
 		color: #7F7F7F;
-		/*border-bottom: solid 1px #E5E5E5;*/
 	}
 
 		#header h1 {
@@ -3490,13 +3488,15 @@ input, select, textarea {
 		position: absolute;
 	}
 
+	.other-nav-text {
+		color: #39c3ef !important;
+	}
+
 /* Banner */
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.png");
-		
+		background-color: #272833;		
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3516,22 +3516,6 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			/*background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			*/
-
-			/*
-			background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(images/overlay.png);
-			background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(images/overlay.png);
-			background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(images/overlay.png);
-			background-image: linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(images/overlay.png);
-			
-			background: linear-gradient(to bottom, #ffffff 0%,#e5f4ff 92%);
-			
-
-			background-image: linear-gradient(rgb(84, 84, 84, 0.3), rgb(84, 84, 84, 0.3)) */
 			background-image: linear-gradient(rgb(100, 100, 100, 0.7), rgb(100, 100, 100, 0.7)), url("../../images/funny.jpg");
 			background-position: center; 
   			background-repeat: no-repeat;
@@ -3556,7 +3540,6 @@ input, select, textarea {
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
-			/*margin-left: -26% !important;*/
 			margin-left: -9vw;
     		margin-right: 15vw;
 		}
@@ -3565,8 +3548,6 @@ input, select, textarea {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			/*margin-right: -8%;*/
-			
 		}
 
 		#banner-logo img{
@@ -3627,10 +3608,6 @@ input, select, textarea {
 			}
 
 				#banner .content .image img {
-					/*border-radius: 100%;
-					display: block;
-					width: 100%;
-					*/
 					display: block;
 				    width: 56%;
 				    margin: auto;
@@ -3645,10 +3622,7 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 1515px) {
-		.header-content {
-   		   /*margin-right: 6vw;*/
-		}
-
+		
 		#banner .content #header-subsection {
     		line-height: 1em;
     	}	
